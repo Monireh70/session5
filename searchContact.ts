@@ -33,13 +33,15 @@ createList(
   parseInt(prompt("Please insert a number as the number of contacts: "))
 );
 
-////------------------------- Search specific Contact -------------------------------
+//------------------------- Search specific Contact -------------------------------
+
 function searchContact(sname: string) {
   if (contactList.some((contact) => contact.name === sname)) {
     console.log("Object found inside the array.");
   } else {
     console.log("Object not found.");
   }
+  //   contactList.find((contact) => contact.name === sname
 }
 
 //-------------------------  call search function --------------
